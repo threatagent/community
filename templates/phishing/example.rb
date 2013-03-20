@@ -38,8 +38,14 @@ end
 # Parse the options
 opts.parse!
 
-puts "Using example data:\n===\n#{variables}\n"
-puts "Using template:\n===\n#@template\n"
+$stdout.puts "Using example data:"
+$stdout.puts "==="
+$stdout.puts variables
+$stdout.puts
+$stdout.puts "Using template:"
+$stdout.puts "==="
+$stdout.puts @template
+$stdout.puts
 
 begin
   @content = File.read(@template)
@@ -52,3 +58,4 @@ rendered = Mustache.render(@content, variables)
 $stdout.puts "Rendered template:"
 $stdout.puts '==='
 $stdout.puts rendered
+$stdout.puts
