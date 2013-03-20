@@ -28,7 +28,7 @@ variables = { company: 'Acme Corporation',
               email: 'john.doe@example.com',
               fname: 'John',
               lname: 'Doe',
-              location: 'Fairfield' # New Jersey
+              location: 'Fairfield', # New Jersey
               name: 'John Doe' }
 
 if ARGV.empty?
