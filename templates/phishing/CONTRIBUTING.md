@@ -12,7 +12,7 @@ The phishing templates used by ThreatAgent utilize
 
 ## Mustache
 Templates in mustache are easy. Write the content and then throw
-mustaches ('{{}}') around your [variables](#variables). The
+mustaches ('{{variable}}') around your [variables](#variables). The
 format we chose to use is reminiscent of an email transcript.
 
 example_scenario.mustache:
