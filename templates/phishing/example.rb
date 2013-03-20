@@ -12,14 +12,11 @@ end
 require 'optparse'
 
 opts = OptionParser.new do |opt|
-  opt.banner = "Usage: #{__FILE__} [-t <template>]"
+  opt.banner = "Usage: #{__FILE__} <mustache_template>"
   opt.separator ''
   opt.separator 'This example file uses Mustache to render'
   opt.separator 'templates with a hash of example values'
   opt.separator 'Options:'
-  opt.on('-t', '--template <mustache>', 'The template file to use') do |filename|
-    @template = filename
-  end
   opt.version = "0.0.1"
 end
 
@@ -34,6 +31,8 @@ variables = { company: 'Acme Corporation',
 if ARGV.empty?
   $stdout.puts opts
   exit 2
+else
+  @template = ARGV.first
 end
 
 # Parse the options
@@ -50,5 +49,6 @@ rescue => e
 end
 
 rendered = Mustache.render(@content, variables)
+$stdout.puts "Rendered template:"
 $stdout.puts '==='
-$stdout.puts "Rendered template: #{rendered}"
+$stdout.puts rendered
