@@ -4,8 +4,9 @@
 2. Figure out which variables you can use with Mustache
 3. Read the [Mustache](#mustache) section below.
 4. Scenario + .mustache = example_scenario.mustache
-5. Open a [pull request](https://github.com/threatagent/community/pulls).
-6. Collaborate, refine, get merged in.
+5. Test against [example.rb](example.rb)
+6. Open a [pull request](https://github.com/threatagent/community/pulls).
+7. Collaborate, refine, get merged in.
 
 The phishing templates used by ThreatAgent utilize
 [Mustache](https://github.com/defunkt/mustache).
