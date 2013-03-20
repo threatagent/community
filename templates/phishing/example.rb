@@ -38,8 +38,8 @@ end
 # Parse the options
 opts.parse!
 
-puts "Using example data: #{variables}"
-puts "Using template: #@template"
+puts "Using example data:\n===\n#{variables}\n"
+puts "Using template:\n===\n#@template\n"
 
 begin
   @content = File.read(@template)
