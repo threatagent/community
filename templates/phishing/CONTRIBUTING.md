@@ -18,9 +18,6 @@ format we chose to use is reminiscent of an email transcript.
 
 example_scenario.mustache:
 ```
-To:
-{{email}}
-
 Subject:
 URGENT: Your {{domain}} email account has been compromised
 

@@ -16,7 +16,6 @@ opts = OptionParser.new do |opt|
   opt.separator ''
   opt.separator 'This example file uses Mustache to render'
   opt.separator 'templates with a hash of example values'
-  opt.separator 'Options:'
   opt.version = "0.0.1"
 end
 
